@@ -4,51 +4,43 @@
 	<meta charset="UTF-8">
 	<title>Ice Ace</title>
 	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/normalize.css">
 </head>
 <body>
 	<!-- В хэдэр помещаем картинку и верхнее меню -->
 	<header>
-		<div>
+		<div class="header">
 			<h1 class="header__title">Школа сноуборда и горных лыж</h1>
-			<span class="header__subtitle">в Санкт-Петербурге</span>
-			<!-- сюда класть верхнее фоновое?  
-			<div><a href="#"><img src="" alt=""></a></div>
-			-->
-		<nav>
-				<ul>
-					<li><a href="#">Расписание</a></li>
-					<li><a href="#">Инструкторы</a></li>
-					<li><a href="#">Стоимость</a></li>
-					<li><a href="#">Как добравться</a></li>
-				</ul>
-				<!-- отдельный див для телефона и кнопки -->
-				<div>
-					<ul>
-						<li><a href="#"></a>8 (800) 800-80-80</a></li>
-						<li><a href="№">Записаться</a></li>
-					</ul>
-					
-				</div>
-			</nav>
+			<p class="header__subtitle"> в Санкт-Петербурге</p>
+		<nav >
+			<ul class="menu">
+				<li><a href="#">Расписание</a></li>
+				<li><a href="#">Инструкторы</a></li>
+				<li><a href="#">Стоимость</a></li>
+				<li><a href="#">Как добраться</a></li>
+				<li class="menu_link_telephone"><a href="#"></a>8 (800) 800-80-80</a></li>
+				<li class="menu_link_signup"><a href="schedule.html">Записаться</a></li>
+			</ul>	
+		</nav>
 		</div>
 	</header>
 
 	<main>
-		<section>
+		<section class="page">
 			<div>
 				<h2>Наши услуги</h2>
 				<p>Для взрослых и детей 6+ / любого уровня </p>
-				<div>
-					<div><img src="#" alt="Первая картинка"></div>
-					<div><img src="#" alt="Вторая картинка"></div>
-					<div>
+				<div class="widget_block">
+					<div class="widget_item"><img src="/img/_sale.jpg" alt="Первая картинка"></div>
+					<div class="widget_item"><img src="img/_sale.jpg" alt="Вторая картинка"></div>
+					<div class="widget_item">
 						<p>Краткий курс</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique in voluptatem facilis nesciunt. Dolor, vitae natus neque iure vel facilis, est porro voluptatem ex enim quisquam ipsa repellat fugiat ut!</p>
 						<p>5 занятий</p>
 					</div>
-					<div></div>
-					<div></div>
-					<div></div>
+					<div class="widget_item"></div>
+					<div class="widget_item"></div>
+					<div class="widget_item"></div>
 				</div>
 			</div>
 		</section>
