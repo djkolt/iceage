@@ -1,3 +1,11 @@
-p{
-	color: red;
+.header__title { 
+	font-size: 80 px;
+	font-style: 800;
+	color: white; 
+	background-color: black;
+}
+
+.header__subtitle { 
+	сolor: white; 
+	background-color: black; 
 }
