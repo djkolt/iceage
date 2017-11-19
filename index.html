@@ -6,73 +6,100 @@
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="style/normalize.css">
 </head>
+
+<!-- В макете 8 блоков: header, Наши услуги (services), Почему мы (why), Скидки на абонементы, Команда, Сообщество, Инстраграм, footer 
+Каждый помещаем в свой div.
+В header входит большой заголовок на фоне и меню
+-->
+
 <body>
-	<!-- В хэдэр помещаем картинку и верхнее меню -->
 	<header>
 		<div class="header">
 			<h1 class="header__title">Школа сноуборда и горных лыж</h1>
 			<p class="header__subtitle"> в Санкт-Петербурге</p>
-		<nav >
-			<ul class="menu">
+		</div>
+		
+		<nav class="menu">
+			<ul class="menu__list">
 				<li><a href="#">Расписание</a></li>
 				<li><a href="#">Инструкторы</a></li>
 				<li><a href="#">Стоимость</a></li>
 				<li><a href="#">Как добраться</a></li>
-				<li class="menu_link_telephone"><a href="#"></a>8 (800) 800-80-80</a></li>
-				<li class="menu_link_signup"><a href="schedule.html">Записаться</a></li>
+				<li class="menu__list--telephone"><a href="#"></a>8 (800) 800-80-80</a></li>
+				<li class="menu__list--signup"><a href="schedule.html">Записаться</a></li>
 			</ul>	
 		</nav>
-		</div>
 	</header>
 
-	<main>
-		<section class="page">
-			<div>
-				<h2>Наши услуги</h2>
-				<p>Для взрослых и детей 6+ / любого уровня </p>
-				<div class="widget_block">
-					<div class="widget_item"><img src="/img/_sale.jpg" alt="Первая картинка"></div>
-					<div class="widget_item"><img src="img/_sale.jpg" alt="Вторая картинка"></div>
-					<div class="widget_item">
-						<p>Краткий курс</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique in voluptatem facilis nesciunt. Dolor, vitae natus neque iure vel facilis, est porro voluptatem ex enim quisquam ipsa repellat fugiat ut!</p>
-						<p>5 занятий</p>
-					</div>
-					<div class="widget_item"></div>
-					<div class="widget_item"></div>
-					<div class="widget_item"></div>
+	<main class="services">
+		<h3>Наши услуги</h3>
+		<p>Для взрослых и детей 6+ / любого уровня подготовки</p>
+		<ul>
+			<li><img src="http://via.placeholder.com/200x200" alt="Первая картинка"></li>
+			<li><img src="http://via.placeholder.com/200x200" alt="Вторая картинка"></li>
+			<li>
+				<div class="services__text">
+				<p><h3>Краткий курс</h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique in voluptatem facilis nesciunt. Dolor, vitae natus neque iure vel facilis, est porro voluptatem ex enim quisquam ipsa repellat
+				<span>5 занятий</span></p>
+				<a href="#"><img src="#" alt="">Стрелочка</a>
 				</div>
-			</div>
-		</section>
-
-		<section>
-			<div>
-				<h2>Почему мы</h2>
-				<!-- 2 строки по 3 столбца = 6 блоков -->
-				<section>
-					<div><img src="#" alt="фото блока"></div>
-					<div>100% <br> гарантия результата</div>
-					<div><p>Уверены - научиться кататься и улучшить свой новык может каждый, и мы </p></div>
-				</section>
-					
+			</li>
+			<li>
+				<div class="services__text">
+				<p><h3>Разовое посещение</h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique in voluptatem facilis nesciunt. Dolor, vitae natus neque iure vel facilis, est porro voluptatem ex enim quisquam ipsa repellat
+				<span>5 занятий</span></p>
+				<a href="#"><img src="#" alt="">Стрелочка</a>
 				</div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-		</section>
+			</li>
+			<li><img src="http://via.placeholder.com/200x200" alt="Третья картинка"></li>
+			<li>
+				<div class="services__text">
+				<p><h3>Полный курс</h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique in voluptatem facilis nesciunt. Dolor, vitae natus neque iure vel facilis, est porro voluptatem ex enim quisquam ipsa repellat
+				<span>5 занятий</span></p>
+				<a href="#"><img src="#" alt="">Стрелочка</a>
+				</div>
+			</li>
+		</ul>
 
-		<section>
-			<div>
-				<h2>Скидки на абонементы</h2>
-				<div></div>
-				<div></div>
-				<div></div>
-				<a href="#">Записаться</a>
-			</div>
-		</section>
+	<section class="why">
+		<h2>Почему мы</h2>
+		<ul>
+			<li>
+				<div class="why__text">
+				<h3>100% гарантия результата<h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias tempora, perferendis ex voluptatum totam provident fuga quibusdam, ut saepe harum id autem voluptas maxime delectus assumenda veniam et recusandae vitae!</p>
+				</div>
+			</li>
+			<li>
+				<div class="why__text">
+				<h3>100% гарантия результата<h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias tempora, perferendis ex voluptatum totam provident fuga quibusdam, ut saepe harum id autem voluptas maxime delectus assumenda veniam et recusandae vitae!</p>
+				</div>
+			</li>
+			<li>
+				<div class="why__text">
+				<h3>100% гарантия результата<h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias tempora, perferendis ex voluptatum totam provident fuga quibusdam, ut saepe harum id autem voluptas maxime delectus assumenda veniam et recusandae vitae!</p>
+				</div>
+			</li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</section>
+
+	<section>
+		<div class="container">
+			<h2>Скидки на абонементы</h2>
+			<div></div>
+			<div></div>
+			<div></div>
+			<a href="#">Записаться</a>
+		</div>
+	</section>
 
 		<section>
 			<div>
