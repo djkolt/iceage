@@ -1,10 +1,80 @@
 
-/*Подключаем шрифт, пока пусть будет Arial*/
+.menu {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu__list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu__contacts {
+	display: flex;
+	width: 20%;
+}
+
+.services ul {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+}
+
+.services li {
+	width: 33%;
+
+}
+
+.services .conyainer {
+		text-align: center;
+}
+
+
+.why ul {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Подключаем шрифт, пока пусть будет Arial
 body {
 	font-family: Arial;
 }
 
-/*Шапка*/
 .header {
 	background-image: url(http://via.placeholder.com/1100x500);
 	width: 1100px;
@@ -43,7 +113,7 @@ body {
 .menu__list { 
 	margin-top: 40px;
 	list-style: none;
-	vertical-align: top;
+	vertical-align: middle;
 	text-align: сenter; 
 }
 
@@ -69,7 +139,6 @@ body {
 	font-weight: bold;
 }
 
-/*Наши услуги*/
 .services {
 	text-align: center;
 	width: 1100px;
@@ -95,7 +164,7 @@ body {
 	font-style: italic;
 }
 
-/*Почему мы*/
+Почему мы
 .why { 
 	width: 1100px;
 	margin: 0 auto;
@@ -108,7 +177,6 @@ body {
 	margin: 50px;
 }
 
-/*скидки*/
 .discounts { 
 	text-align: center;
 	width: 1100px;
@@ -134,7 +202,7 @@ body {
 	font-style: italic;
 }
 
-/*команда*/
+
 .team { 
 	text-align: center;
 	width: 1100px;
@@ -173,6 +241,7 @@ body {
 	width: 1100px;
 	margin: 0 auto;
 	border: 1px solid #000;
+
  }
 
 .footer { 
@@ -189,4 +258,4 @@ body {
 	list-style: none;
  }
 
-
+*/
