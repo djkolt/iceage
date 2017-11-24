@@ -1,7 +1,47 @@
 
+
+/*Заголовки на всех станицах одинакового 
+размера и выровнен по центру*/
+h2 {
+	font-size: 24px;
+	text-align: center;
+}
+
+
+h3 {
+	font-size: 18px;
+	text-align: center;
+}
+
+/*Стилизуем шапку: фоновый рисунок, 
+высота, цвет */
+.promo {
+	display: flex;
+	background-image: url(http://via.placeholder.com/1100x500);
+	height: 500px;
+	color: white;
+	text-align: left;
+	align-items: center;
+}
+
+.promo__title { 
+	width: 330px;
+	font-size: 36px;
+	padding: 100px 30px;
+ }
+
+.promo__subtitle { 
+	font-size: 18px;
+	padding: 20px 30px;
+}
+
+/*Меню*/
+
 .menu {
 	display: flex;
 	justify-content: space-between;
+	height: 100px;
+	align-items: center;
 }
 
 .menu__list {
@@ -9,9 +49,33 @@
 	justify-content: space-between;
 }
 
+.menu__list a {
+	padding: 0 20px;
+	text-decoration: none;
+	list-style: none;
+}
+
 .menu__contacts {
 	display: flex;
 	width: 20%;
+}
+
+.menu__contacts--telephone {
+	font-weight: bold;
+	padding: 0 20px;
+}
+
+.menu__contacts--signup {
+	border: 1px solid #000;
+	padding: 8px;
+	color: green;
+	font-weight: bolder;
+}
+
+/*Услуги*/
+
+.services__subtitle {
+	text-align: center;
 }
 
 .services ul {
@@ -22,240 +86,79 @@
 
 .services li {
 	width: 33%;
-
+	list-style: none;
 }
 
-.services .conyainer {
+.services .container {
+		text-align: center;
+}
+
+/*Почему мы*/
+.why ul {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+}
+
+.why li {
+	width: 33%;
+	list-style: none;
+}
+
+.why .container {
 		text-align: center;
 }
 
 
-.why ul {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	-webkit-flex-wrap: wrap;
-	-moz-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	-o-flex-wrap: wrap;
-	flex-wrap: wrap;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Подключаем шрифт, пока пусть будет Arial
-body {
-	font-family: Arial;
-}
-
-.header {
-	background-image: url(http://via.placeholder.com/1100x500);
-	width: 1100px;
-	height: 500px;
-	margin: 0 auto;
-	border: 1px solid #000;
-	color: white;
-	text-align: left;
-}
-
-.header h1 { 
-	width: 400px;
-}
-
-.header__title { 
-	display: inline-block;
-	width: 330px;
-	font-size: 36px;
-	padding: 30px;
- }
-
-.header__subtitle { 
-	display: inline-block;
-	font-size: 18px;
-	padding: 20px 30px;
-}
-
-.menu {
-	text-align: center;
-	width: 1100px;
-	height: 100px;
-	margin: 0 auto;
-	border: 1px solid #000;
-}
-
-.menu__list { 
-	margin-top: 40px;
-	list-style: none;
-	vertical-align: middle;
-	text-align: сenter; 
-}
-
-.menu__list li {
-	display: inline-block;
-}
-
-.menu__list a {
-	color: black;
-	text-decoration: none;
-	margin: 10px;
-}
-
-.menu__list--signup a {
-	border: 1px solid #000;
-	padding: 8px;
-	color: green;
-	font-weight: bolder;
-}
-
-.menu__list-telephone a {
-	color: black;
-	font-weight: bold;
-}
-
-.services {
-	text-align: center;
-	width: 1100px;
-	margin: 0 auto;
-	border: 1px solid #000
-}
-
-.services li {
-	display: inline-block;
-	list-style: none;
-	margin: 50px;
-}
-
-.services__text {
-	width: 200px;
-}
-
-.services h3 {
-	font-size: 20;
-}
-
-.services__text span {
-	font-style: italic;
-}
-
-Почему мы
-.why { 
-	width: 1100px;
-	margin: 0 auto;
-	border: 1px solid #000;
- }
-
-.why li {
-	display: block;
-	list-style: none;
-	margin: 50px;
-}
-
-.discounts { 
-	text-align: center;
-	width: 1100px;
-	margin: 0 auto;
-	border: 1px solid #000;
- }
-
- .discounts__list {
- 	list-style: none;
- 	text-align: center;
- }
-
-.discounts__list li {
- 	width: 330px;
- 	display: inline-block;
- }
-
-.discounts__list-title { 
-	padding: 10px;
- }
-
-.discounts__list-bold {
-	font-style: italic;
-}
-
-
-.team { 
-	text-align: center;
-	width: 1100px;
-	margin: 0 auto;
-	border: 1px solid #000;
- }
-
 .team__container {
-	width: 1100px;
-	height: 600px;
+	display: flex;
+	align-content: flex-end;
+	height: 500px;
 	background-image: url(http://via.placeholder.com/1100x600);
 } 
 
-.team__container span {
-	width: 300px;
-	text-align: center;
-	border: 1px solid #000;
-}
-
 .team__container-link {
-	display: inline-block;
 	padding: 10px;
 	margin: 20px;
 	border: 1px solid #000;
 }
 
- .community { 
- 	text-align: center;
-	width: 1100px;
-	margin: 0 auto;
-	border: 1px solid #000;
- }
+.instagram {
+	margin-bottom: 70px;
+}
 
- .instagram { 
- 	text-align: center;
-	width: 1100px;
-	margin: 0 auto;
-	border: 1px solid #000;
+.instagram__container {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+}
 
- }
+
+/*Подвал*/
 
 .footer { 
  	background-image: url(http://via.placeholder.com/1100x300);
-	width: 1100px;
-	margin: 0 auto;
  }
 
- .footer_container{ 
+ .footer__container--row1 { 
+	display: flex;
+	border: 1px solid #000;
+	justify-content: space-between;
+ }
+
+ .footer__container--row2 { 
+ 	display: flex;
+ 	justify-content: space-between;
 	border: 1px solid #000;
  }
 
- .footer__menu li {
+ .footer__menu ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	text-align: left;
+}
+
+.footer__menu li {
 	list-style: none;
  }
-
-*/
