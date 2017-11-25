@@ -20,6 +20,12 @@ h3 {
 	font-size: 18px;
 }
 
+.container {
+	justify-content: space-around;
+	margin-left: 55px;
+	margin-right: 55px;
+}
+
 /*Стилизуем шапку: фоновый рисунок, 
 высота, цвет */
 .promo {
@@ -95,11 +101,9 @@ h3 {
 /*Услуги*/
 
 .services {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
+	height: 670px;
+	-ms-align-items: flex-start;
+	align-items: flex-start;
 }
 
 .services__text {
@@ -120,15 +124,16 @@ h3 {
 	display: flex;
 	flex-wrap: wrap;
 	text-align: left;
+	justify-content: space-between;
 }
 
 .services li {
-	width: 33%;
+	width: 30%;
 	list-style: none;
 }
 
 .services .container {
-		text-align: center;
+	text-align: center;
 }
 
 /*Почему мы*/
@@ -147,12 +152,13 @@ h3 {
 		text-align: center;
 }
 
+/*Команда*/
 
 .team__container {
 	display: flex;
 	align-content: flex-end;
 	height: 500px;
-	background-image: url(http://via.placeholder.com/1100x600);
+	background: url("/Users/nikolaj/Documents/github/iceage/img/team.jpg");
 } 
 
 .team__container-link {
