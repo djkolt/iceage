@@ -3,62 +3,66 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Ice Ace</title>
-		<!-- <link rel="stylesheet" href="style/normalize.css"> -->
+		<link rel="stylesheet" href="style/normalize.css">
 		<link rel="stylesheet" href="style/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
-	<!-- В макете 8 блоков: header, Наши услуги (services), Почему мы (why), Скидки на абонементы (discounts), Команда (team), Сообщество (community), Инстраграм (instagram), footer 
-	Каждый помещаем в свой div.
-	В header входит большой заголовок на фоне и меню-->
+
 	<body>
+		<div class="promo">
+			<h1 class="promo-title">Школа сноуборда и горных лыж </h1>
+			<h2 class="promo-subtitle">в Санкт-Петербурге</h2>	
+		</div>
+
 		<header>
-			<div class="promo">
-				<h1> 
-					<p class="promo__title">Школа сноуборда <br>и горных лыж</p><br>
-					<span class="promo__subtitle"> в Санкт-Петербурге</span>
-				</h1>	
+			<div class="menu">
+				<a class="menu--logo" href="#"><img src="img/logo-ice-age.png" alt="Логотип"></a>
+				<a class="menu__btn" href="#">Расписание</a>
+				<a class="menu__btn" href="#">Инструкторы</a>
+				<a class="menu__btn" href="#">Стоимость</a>
+				<a class="menu__btn" href="#">Как добраться</a>
+				<a class="menu__btn contacts-telephone" href="#">8 (800) 800-80-80</a>
+				<a class="menu__btn btn"href="#">Записаться</a>
 			</div>
-			<nav class="menu container">
-				<ul class="menu__list">
-					<li><a class="menu--logo" href="#">Ice Age</a></li>
-					<li><a class="menu__but" href="#">Расписание</a></li>
-					<li><a class="menu__but" href="#">Инструкторы</a></li>
-					<li><a class="menu__but" href="#">Стоимость</a></li>
-					<li><a hclass="menu__but" ref="#">Как добраться</a></li>
-					<li><a class="menu--telephone" href="#">8 (800) 800-80-80</a></li>
-					<li><a class="menu--signup" href="schedule.html">Записаться</a></li>
-				</ul>
-			</nav>
 		</header>
 		<!-- Меню -->
 		<main>
 			<section class="services">
 				<div class="container">
-					<h2>Наши услуги</h2>
-					<div class="services__subtitle"><p>Для взрослых и детей 6+ / любого уровня подготовки</p></div>
-					<ul>
-						<li><img src="img/services-1.jpg" alt="Первая картинка"></li>
-						<li><img src="img/services-2.jpg" alt="Вторая картинка"></li>
-						<li>
-							<div class="services__text">
-								<h4>Краткий курс</h4>
-								<p>Экспресс курс рассчитан на тех, кто хочет повысить свой уровень в короткий срок, узнать новые техники катания и получить лайфхаки “как кататься как чемпион” от опытных инструкторов, подходит как для новичков, так и более опытных
-								<span>5 занятий</span></p>
+					
+					<h2 class="page-title">Наши услуги</h2>
+					
+					<p class="page-subtitle">Для взрослых и детей 6+ / любого уровня подготовки</p>
+
+					
+					<ul class="services-articles">
+						<!-- services-articles__item -->
+						<li class="services-articles__item"><img src="img/services-1.jpg" alt="Первая картинка"></li>
+						<li class="services-articles__item"><img src="img/services-2.jpg" alt="Вторая картинка"></li>
+						<li class="services-articles__item">
+							<article class="services-article">
+								<!-- services-article__title -->
+								<h3>Краткий курс</h3>
+								<!-- services-article__text -->
+								<p>Экспресс курс рассчитан на тех, кто хочет повысить свой уровень в короткий срок, узнать новые техники катания и получить лайфхаки “как кататься как чемпион” от опытных инструкторов, подходит как для новичков, так и более опытных</p>
+								<!-- services-article__text -->
+								<p>5 занятий</p>
+								<!-- services-article__link -->
 								<a href="#"><img src="#" alt="">Стрелочка</a>
-							</div>
+							</article>
 						</li>
-						<li>
+						<li class="services-articles__item">
 							<div class="services__text">
-							<h3>Разовое посещение</h3>
+							<h3 class="page-subtitle">Разовое посещение</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique in voluptatem facilis nesciunt. Dolor, vitae natus neque iure vel facilis, est porro voluptatem ex enim quisquam ipsa repellat
 							<span>5 занятий</span></p>
 							<a href="#"><img src="#" alt="">Стрелочка</a>
 							</div>
 						</li>
-						<li><img src="img/services-3.jpg" alt="Третья картинка"></li>
+						<li class="services-articles__item"><img src="img/services-3.jpg" alt="Третья картинка"></li>
 						<li>
 							<div class="services__text">
-							<h3>Полный курс</h3>
+								<!-- article-title -->
+							<h3 class="page-subtitle">Полный курс</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique in voluptatem facilis nesciunt. Dolor, vitae natus neque iure vel facilis, est porro voluptatem ex enim quisquam ipsa repellat
 							<span>5 занятий</span></p>
 							<a href="#"><img src="#" alt="">Стрелочка</a>
@@ -70,39 +74,47 @@
 <!-- Почему мы -->
 			<section class="why">
 				<div class="container">
-					<h2>Почему мы</h2>
-					<ul>
-						<li><div class="why__text">
-							<p class="why__lead">100% <br>гарантия результата</p>
-							<p>Уверены — научиться кататься и улучшить свой навык может каждый, и мы гарантируем результат уже через 5 занятий</p></div>
-						</li>
-						<li><div class="why__text">
-							<p class="why__lead">Опытные <br>инструкторы</p>
-							<p>У всех инструкторов школы есть международный сертификат, который дает право обучать катанию на сноуборде и горных лыжах</p></div>
-						</li>
-						<li><div class="why__text">
-							<p class="why__lead">Индивидуальные занятия <br>и расписания</p>
-							<p>Мы любим индивидуальный подход, поэтому все занятия с тренером — персональные, а график обучения составляете вы сами</p></div>
-						</li>
-						<li><div class="why__text">
-							<p class="why__lead">Одежда и инвентарь</p>
-							<p>Все, что необходимо для комфортного занятия - включено в стоимость, с нами не нужно беспокоиться об аренде снаряжения и покупке дорогой одежды</p></div>
-						</li>
-						<li><div class="why__text">
-							<p class="why__lead">Безопасность</p>
-							<p>Каждый инструктор подбирает технику катания и угол склона индивидуально под ваш уровень и гарантирует 100% безопасность во время занятия</p></div>
-						</li>
-						<li><div class="why__text">
-							<p class="why__lead">Трансфер</p>
-							<p>30 минут и вы на месте, столько примерно занимает дорога из центра города до склона на нашем бесплатном трансфере, который легко забронировать</p></div>
-						</li>
-					</ul>
+					<h2  class="page-title">Почему мы</h2>
+						<div class="why__inner">
+					
+						<div class="why__text">
+							<h3 class="why__lead bg-like">100% гарантия результата</h3>
+							<p>Уверены — научиться кататься и улучшить свой навык может каждый, и мы гарантируем результат уже через 5 занятий</p>
+						</div>
+						
+						<div class="why__text">
+							<h3 class="why__lead bg-certificate">Опытные инструкторы</h3>
+							<p>У всех инструкторов школы есть международный сертификат, который дает право обучать катанию на сноуборде и горных лыжах</p>
+						</div>
+						
+						<div class="why__text bg-Today_100">
+							<h3 class="why__lead">Индивидуальные занятия и расписания</h3>
+							<p>Мы любим индивидуальный подход, поэтому все занятия с тренером — персональные, а график обучения составляете вы сами</p>
+						</div>
+						
+						<div class="why__text">
+							<h3 class="why__lead bg-ski">Одежда и инвентарь</h3>
+							<p>Все, что необходимо для комфортного занятия - включено в стоимость, с нами не нужно беспокоиться об аренде снаряжения и покупке дорогой одежды</p>
+						</div>
+						
+						<div class="why__text">
+							<h3 class="why__lead bg-snowboard_helmet">Безопасность</h3>
+							<p>Каждый инструктор подбирает технику катания и угол склона индивидуально под ваш уровень и гарантирует 100% безопасность во время занятия</p>
+						</div>
+						
+						<div class="why__text">
+							<h3 class="why__lead bg-bus">Трансфер</h3>
+							<p>30 минут и вы на месте, столько примерно занимает дорога из центра города до склона на нашем бесплатном трансфере, который легко забронировать</p>
+						</div>
+						
+						</div>
+					
 				</div>
 			</section>
 <!-- Скидки -->
 			<section class="discounts">
 				<div class="container">
-					<h2>Скидки на абонементы</h2>
+					<h2 class="page-title">Скидки на абонементы</h2>
 						<ul class="discounts__list">
 							<li><span class="discounts__list-title">Пробуй</span>
 								Дарим скидку <span class="discounts__list-bold">5%</span>новичкам, прошедшим разовое занятие
@@ -120,54 +132,65 @@
 <!-- Команда -->
 			<section class="team">
 				<div class="container">
-					<h2>Команда</h2>
+					<h2 class="page-title">Команда</h2>
 						<div class="team__container">
-							<div>Привет! Мы - команда инструкторов ICE AGE. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere iure voluptas laudantium, temporibus quod tempore ipsa voluptatibus. Ducimus magni maiores labore, voluptates ipsam dolorem veniam, neque. Quibusdam molestiae aperiam labore!</div>
-						
-							<a class="team__container-link" href="#">Выбрать инструктора</a>
+							<p class="team__text">Привет! Мы - команда инструкторов ICE AGE. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere iure voluptas laudantium, temporibus quod tempore ipsa voluptatibus. Ducimus magni maiores labore, voluptates ipsam dolorem veniam, neque. Quibusdam molestiae aperiam labore!</p>
+							<a class="team__btn btn" href="#">Выбрать инструктора</a>
 						</div>
 				</div>
 			</section>
 <!-- Сообщество -->
 			<section class="community">
 				<div class="container">
-					<h2>Сообщество</h2>
-					<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt illum maxime voluptas enim, ipsa nisi. Facere quibusdam tempore voluptatem praesentium quasi sit, incidunt. Fugiat quod dolore, voluptatem corrupti ex qui.</p></div>
+					<h2 class="page-title">Сообщество</h2>
+					<p>ICE ACЕ — не только школа, а целое комьюнити вдохновленных снегом и горами людей, мы без ума от сноуборда и горных лыж и часто делимся важными событиями в социальных сетях, следите за нами на канале Youtube и в Instagram или приходи к нам, мы всё расскажем.</p>
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab2a2cea07038e912782e303aba728cb554d31434b832bfbba0dc85906eced067&amp;source=constructor" width="100%" height="350" frameborder="0"></iframe>
 				</div>
 			</section>
 <!-- Инстаграм -->
 			<section class="instagram">
 				<div class="container">
-					<h2>#ice_age_community</h2>
-					<div class="instagram__container">
-						<img src="img/instagram-01.jpg" alt="ИнстаФото1">
-						<img src="img/instagram-02.jpg" alt="ИнстаФото2">
-						<img src="img/instagram-03.jpg" alt="ИнстаФото3">
-						<img src="img/instagram-04.jpg" alt="ИнстаФото4">
-						<img src="img/instagram-05.jpg" alt="ИнстаФото5">
-						<img src="img/instagram-06.jpg" alt="ИнстаФото6">
+					<h2 class="page-title"><a href="">#ice_age_community</a></h2>
+					<div class="gallery">
+						<div class="gallery__item">
+							<a href="#"><img src="img/instagram-01.jpg" alt="ИнстаФото1"></a>
+							<a href="#"><img src="img/instagram-02.jpg" alt="ИнстаФото2"></a>
+							<a href="#"><img src="img/instagram-03.jpg" alt="ИнстаФото3"></a>
+							<a href="#"><img src="img/instagram-04.jpg" alt="ИнстаФото4"></a>
+							<a href="#"><img src="img/instagram-05.jpg" alt="ИнстаФото5"></a>
+							<a href="#"><img src="img/instagram-06.jpg" alt="ИнстаФото6"></a>
+						</div>
 					</div>
 				</div>
 			</section>
 		</main>
-<!-- Подвал 2 строки: 1) лого, соцкнопки, контакты 2) копирайт, нижнее меню -->
+
 		<footer class="footer">
 			<div class="container">
 				<div  class="footer__container--row1">
-					<div class="footer__logo"><img src="http://via.placeholder.com/50x120" alt="logo"></div>
-					<div class="footer__social"><p>Social</p></div>
-					<div class="footer__contacts"><p>8 800 800-80-80</p><br>
-						<p>hello@iceage.com</p></div>
+					<div class="footer__logo"><img src="img/logo-ice-age.png" alt="logo"></div>
+					<div class="footer__social">
+						<a class="bg-youtube_logo" href="#"></a>
+						<a class="bg-instagram_logo" href="#"></a>
+						<a class="bg-facebook_logo" href="#"></a>
+						<a class="bg-vk_logo" href="#"></a>
+					</div>
+					<div class="footer__contacts">
+						<a href="#">8 800 800-80-80</a>
+						<a href="mailto:hello@iceage.com">hello@iceage.com</a>
+					</div>
 				</div>
 				<div class="footer__container--row2">
-					<nav class="footer__menu">
-						<div class="footer__copyright"><p>Copyright</p></div>
-						<ul>
-							<li>Расписание</li>
-							<li>Инструкторы</li>
-							<li>Стоимость</li>
-							<li>Как добравться</li>
-						</ul>
+					
+						<div class="footer__copyright"><p>© 2017 “ICE ACE” — школа сноуборда и горных лыж. Все права защищены </p></div>
+						<nav class="footer__nav">
+							<ul class="footer__menu">
+								<li class="footer__item"><a href="#">Расписание</a></li>
+								<li class="footer__item"><a href="#">Инструкторы</a></li>
+								<li class="footer__item"><a href="#">Стоимость</a></li>
+								<li class="footer__item"><a href="#">Как добраться</a></li>
+
+							</ul>
 					</nav>
 				</div>
 			</div>
