@@ -198,13 +198,17 @@ header {
 }
 
 .discounts__list {
+	margin-left: 40px;
+	margin-right: 40px;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	color: white;
 }
 
 .discounts__item {
 	width: 200px;
+	margin: 40px;
 }
 
 .discounts__list-title {
@@ -221,6 +225,8 @@ header {
 
 
 /*Команда*/
+
+
 
 .team__container {
 	display: block;
