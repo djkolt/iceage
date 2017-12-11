@@ -185,6 +185,41 @@ header {
 }
 
 
+/*Скидки*/
+
+.discounts {
+	background-image: url("../img/discounts-bg.jpg");
+	background-repeat: no-repeat;
+}
+
+.discounts__title {
+	color: white;
+	padding-top: 30px;
+}
+
+.discounts__list {
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+
+.discounts__item {
+	width: 200px;
+}
+
+.discounts__list-title {
+	color: white;
+}
+
+.discounts__list-bold {
+	font-weight: bold;
+}
+
+.discounts__button {
+
+}
+
+
 /*Команда*/
 
 .team__container {
