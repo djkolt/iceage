@@ -100,19 +100,23 @@ header {
 
 
 .services-articles {
-	display: flex;
+	display: inline-flex;
 	flex-wrap: wrap;
+	align-content: space-between;
 }
 
-.services-articles__item {
+.services-item {
 	width: 28%;
 	margin: 2%;
+	position: relative;
+}
+
+.services-articles__img {
+	
 }
 
 .services-article {
-	
-	
-	align-items: stretch;
+
 }
 
 .services-article__title {
@@ -123,12 +127,16 @@ header {
 
 .services-article__text {
 	text-align: left;
-
 }
 
 .services-article__link {
 	display: flex;
 	justify-content: space-between;
+	bottom: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
 
 .services {
