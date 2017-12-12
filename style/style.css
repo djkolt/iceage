@@ -30,10 +30,7 @@ body {
 	text-align: center;
 }
 
-.page-subtitle {
-	font-size: 18px;
-	text-align: center;
-}
+
 
 
 .promo {
@@ -101,39 +98,66 @@ header {
 
 /*Услуги*/
 
-.services__subtitle {
-	text-align: center;
-}
 
-.services ul {
+.services-articles {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.services-articles__item {
+	width: 28%;
+	margin: 2%;
+}
+
+.services-article {
+	
+	
+	align-items: stretch;
+}
+
+.services-article__title {
+	font-size: 20px;
 	text-align: left;
+	margin-top: 0;
 }
 
-.services li {
-	width: 33%;
-	list-style: none;
+.services-article__text {
+	text-align: left;
+
 }
 
-.services .container {
+.services-article__link {
+	display: flex;
+	justify-content: space-between;
+}
+
+.services {
 	text-align: center;
 }
 
 /*Почему мы*/
+
+
 .why__inner {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: flex-start;
 	text-align: left;
+	
 }
 
 .why__text {
-	width: 33%;
-	list-style: none;
+	width: 25%;
+	margin: 0 3%;
 }
 
 .why .container {
-		text-align: center;
+	text-align: center;
+}
+
+.why__lead {
+	margin: 30px;
+	text-align: center;
 }
 
 .bg-like:before {
@@ -189,7 +213,7 @@ header {
 
 .discounts {
 	background-image: url("../img/discounts-bg.jpg");
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 }
 
 .discounts__title {
@@ -197,18 +221,22 @@ header {
 	padding-top: 30px;
 }
 
-.discounts__list {
+.discounts__inner {
 	margin-left: 40px;
 	margin-right: 40px;
+	padding-bottom: 40px;
 	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+	align-items: flex-start;
 	color: white;
+	position: relative;
 }
 
 .discounts__item {
 	width: 200px;
-	margin: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	text-align: center;
 }
 
 .discounts__list-title {
@@ -217,10 +245,22 @@ header {
 
 .discounts__list-bold {
 	font-weight: bold;
+	color: #74e196;
 }
 
 .discounts__button {
+	border: 2px solid white;
+	padding: 15px 32px;
+	color: #74e196;
+	font-size: 15px;
+	font-weight: bolder;
+	text-decoration: none;
+}
 
+.discounts-button-inner {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
 }
 
 
@@ -229,30 +269,47 @@ header {
 
 
 .team__container {
-	display: block;
 	position: relative;
-	height: 500px;
+	height: 680px;
 	background-image: url("../img/team.jpg");
 	background-repeat: no-repeat;
-	margin: 0 auto;
+	background-position: center top;
 } 
 
 .team__text {
 	position: absolute;
-	bottom: 30px;
-	width: 750px;
+	bottom: 100px;
+	margin: 0 20%;
 	text-align: center;
+	justify-content: space-around;
+}
+
+.choose-btn-inner {
+
 }
 
 .team__btn {
 	position: absolute;
-	display: block;
-	margin-bottom: 0;
-	padding: 10px;
-	margin: 0 auto;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 40px;
+	width: 210px;
 	border: 1px solid #000;
-	bottom: -40px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 15px;
 }
+
+/*Сообщество */
+
+.community-text {
+	margin: 0 20%;
+	text-align: center;
+}
+
+
+
 
 /*Инстраграм*/
 
